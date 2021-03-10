@@ -1,0 +1,6 @@
+framework module Pods_MPT_Parking {
+  umbrella header "Pods-MPT Parking-umbrella.h"
+
+  export *
+  module * { export * }
+}

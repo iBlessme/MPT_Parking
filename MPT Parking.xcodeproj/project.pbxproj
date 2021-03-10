@@ -1,0 +1,774 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0BC04C29F9D2821DEDA66C85 /* Pods_MPT_Parking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6DC7B32008C90857E63AB6 /* Pods_MPT_Parking.framework */; };
+		2024F23C25DE5A96004EA398 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2024F23B25DE5A96004EA398 /* LoginViewController.swift */; };
+		2024F24125DE5AF2004EA398 /* mainLoginRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2024F24025DE5AF2004EA398 /* mainLoginRegistrationViewController.swift */; };
+		2024F24C25DEF9E7004EA398 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2024F24B25DEF9E7004EA398 /* GoogleService-Info.plist */; };
+		208E273E25DE3801005266B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208E273D25DE3801005266B6 /* AppDelegate.swift */; };
+		208E274025DE3801005266B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208E273F25DE3801005266B6 /* SceneDelegate.swift */; };
+		208E274225DE3801005266B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208E274125DE3801005266B6 /* ViewController.swift */; };
+		208E274525DE3801005266B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 208E274325DE3801005266B6 /* Main.storyboard */; };
+		208E274725DE3802005266B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 208E274625DE3802005266B6 /* Assets.xcassets */; };
+		208E274A25DE3802005266B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 208E274825DE3802005266B6 /* LaunchScreen.storyboard */; };
+		208E275525DE3802005266B6 /* MPT_ParkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208E275425DE3802005266B6 /* MPT_ParkingTests.swift */; };
+		208E276025DE3802005266B6 /* MPT_ParkingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208E275F25DE3802005266B6 /* MPT_ParkingUITests.swift */; };
+		208E279225DE4698005266B6 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208E279125DE4698005266B6 /* RegistrationViewController.swift */; };
+		20AF956225E3A10600E64755 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AF956125E3A10600E64755 /* ProfileViewController.swift */; };
+		D5FE931F9BCDBA74FD387D49 /* Pods_MPT_ParkingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE79FC15674E363A299CFA2D /* Pods_MPT_ParkingTests.framework */; };
+		F4D7A307A22B58981013A72A /* Pods_MPT_Parking_MPT_ParkingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EF7CACE9EE78A886D62811B /* Pods_MPT_Parking_MPT_ParkingUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		208E275125DE3802005266B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 208E273225DE3801005266B6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 208E273925DE3801005266B6;
+			remoteInfo = "MPT Parking";
+		};
+		208E275C25DE3802005266B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 208E273225DE3801005266B6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 208E273925DE3801005266B6;
+			remoteInfo = "MPT Parking";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C6DC7B32008C90857E63AB6 /* Pods_MPT_Parking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MPT_Parking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EF7CACE9EE78A886D62811B /* Pods_MPT_Parking_MPT_ParkingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MPT_Parking_MPT_ParkingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2024F23B25DE5A96004EA398 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2024F24025DE5AF2004EA398 /* mainLoginRegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainLoginRegistrationViewController.swift; sourceTree = "<group>"; };
+		2024F24B25DEF9E7004EA398 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		208E273A25DE3801005266B6 /* MPT Parking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MPT Parking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		208E273D25DE3801005266B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		208E273F25DE3801005266B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		208E274125DE3801005266B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		208E274425DE3801005266B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		208E274625DE3802005266B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		208E274925DE3802005266B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		208E274B25DE3802005266B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		208E275025DE3802005266B6 /* MPT ParkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MPT ParkingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		208E275425DE3802005266B6 /* MPT_ParkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPT_ParkingTests.swift; sourceTree = "<group>"; };
+		208E275625DE3802005266B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		208E275B25DE3802005266B6 /* MPT ParkingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MPT ParkingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		208E275F25DE3802005266B6 /* MPT_ParkingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPT_ParkingUITests.swift; sourceTree = "<group>"; };
+		208E276125DE3802005266B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		208E279125DE4698005266B6 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		20AF956125E3A10600E64755 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		27C00F52AD4467A4D249D4EA /* Pods-MPT Parking-MPT ParkingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MPT Parking-MPT ParkingUITests.debug.xcconfig"; path = "Target Support Files/Pods-MPT Parking-MPT ParkingUITests/Pods-MPT Parking-MPT ParkingUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4B4588BCBC0932606BC7EB48 /* Pods-MPT Parking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MPT Parking.debug.xcconfig"; path = "Target Support Files/Pods-MPT Parking/Pods-MPT Parking.debug.xcconfig"; sourceTree = "<group>"; };
+		9D2B55C458B2F35CC5B3F20A /* Pods-MPT ParkingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MPT ParkingTests.release.xcconfig"; path = "Target Support Files/Pods-MPT ParkingTests/Pods-MPT ParkingTests.release.xcconfig"; sourceTree = "<group>"; };
+		AC96371A4D68576587413D89 /* Pods-MPT Parking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MPT Parking.release.xcconfig"; path = "Target Support Files/Pods-MPT Parking/Pods-MPT Parking.release.xcconfig"; sourceTree = "<group>"; };
+		EA7797CC51E08075A0C34DD6 /* Pods-MPT Parking-MPT ParkingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MPT Parking-MPT ParkingUITests.release.xcconfig"; path = "Target Support Files/Pods-MPT Parking-MPT ParkingUITests/Pods-MPT Parking-MPT ParkingUITests.release.xcconfig"; sourceTree = "<group>"; };
+		EAAFB7F8ED9E21647018F79B /* Pods-MPT ParkingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MPT ParkingTests.debug.xcconfig"; path = "Target Support Files/Pods-MPT ParkingTests/Pods-MPT ParkingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FE79FC15674E363A299CFA2D /* Pods_MPT_ParkingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MPT_ParkingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		208E273725DE3801005266B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BC04C29F9D2821DEDA66C85 /* Pods_MPT_Parking.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		208E274D25DE3802005266B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5FE931F9BCDBA74FD387D49 /* Pods_MPT_ParkingTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		208E275825DE3802005266B6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4D7A307A22B58981013A72A /* Pods_MPT_Parking_MPT_ParkingUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		208E273125DE3801005266B6 = {
+			isa = PBXGroup;
+			children = (
+				208E273C25DE3801005266B6 /* MPT Parking */,
+				208E275325DE3802005266B6 /* MPT ParkingTests */,
+				208E275E25DE3802005266B6 /* MPT ParkingUITests */,
+				208E273B25DE3801005266B6 /* Products */,
+				2112F9F33F85A82F77B7928D /* Pods */,
+				631AA62993ED2E52B6EF8831 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		208E273B25DE3801005266B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				208E273A25DE3801005266B6 /* MPT Parking.app */,
+				208E275025DE3802005266B6 /* MPT ParkingTests.xctest */,
+				208E275B25DE3802005266B6 /* MPT ParkingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		208E273C25DE3801005266B6 /* MPT Parking */ = {
+			isa = PBXGroup;
+			children = (
+				208E273D25DE3801005266B6 /* AppDelegate.swift */,
+				208E273F25DE3801005266B6 /* SceneDelegate.swift */,
+				208E274125DE3801005266B6 /* ViewController.swift */,
+				208E279125DE4698005266B6 /* RegistrationViewController.swift */,
+				2024F23B25DE5A96004EA398 /* LoginViewController.swift */,
+				2024F24025DE5AF2004EA398 /* mainLoginRegistrationViewController.swift */,
+				20AF956125E3A10600E64755 /* ProfileViewController.swift */,
+				208E274325DE3801005266B6 /* Main.storyboard */,
+				208E274625DE3802005266B6 /* Assets.xcassets */,
+				208E274825DE3802005266B6 /* LaunchScreen.storyboard */,
+				208E274B25DE3802005266B6 /* Info.plist */,
+				2024F24B25DEF9E7004EA398 /* GoogleService-Info.plist */,
+			);
+			path = "MPT Parking";
+			sourceTree = "<group>";
+		};
+		208E275325DE3802005266B6 /* MPT ParkingTests */ = {
+			isa = PBXGroup;
+			children = (
+				208E275425DE3802005266B6 /* MPT_ParkingTests.swift */,
+				208E275625DE3802005266B6 /* Info.plist */,
+			);
+			path = "MPT ParkingTests";
+			sourceTree = "<group>";
+		};
+		208E275E25DE3802005266B6 /* MPT ParkingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				208E275F25DE3802005266B6 /* MPT_ParkingUITests.swift */,
+				208E276125DE3802005266B6 /* Info.plist */,
+			);
+			path = "MPT ParkingUITests";
+			sourceTree = "<group>";
+		};
+		2112F9F33F85A82F77B7928D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4B4588BCBC0932606BC7EB48 /* Pods-MPT Parking.debug.xcconfig */,
+				AC96371A4D68576587413D89 /* Pods-MPT Parking.release.xcconfig */,
+				27C00F52AD4467A4D249D4EA /* Pods-MPT Parking-MPT ParkingUITests.debug.xcconfig */,
+				EA7797CC51E08075A0C34DD6 /* Pods-MPT Parking-MPT ParkingUITests.release.xcconfig */,
+				EAAFB7F8ED9E21647018F79B /* Pods-MPT ParkingTests.debug.xcconfig */,
+				9D2B55C458B2F35CC5B3F20A /* Pods-MPT ParkingTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		631AA62993ED2E52B6EF8831 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C6DC7B32008C90857E63AB6 /* Pods_MPT_Parking.framework */,
+				1EF7CACE9EE78A886D62811B /* Pods_MPT_Parking_MPT_ParkingUITests.framework */,
+				FE79FC15674E363A299CFA2D /* Pods_MPT_ParkingTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		208E273925DE3801005266B6 /* MPT Parking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 208E276425DE3802005266B6 /* Build configuration list for PBXNativeTarget "MPT Parking" */;
+			buildPhases = (
+				635772CEB8CBF1AA48DE16A1 /* [CP] Check Pods Manifest.lock */,
+				208E273625DE3801005266B6 /* Sources */,
+				208E273725DE3801005266B6 /* Frameworks */,
+				208E273825DE3801005266B6 /* Resources */,
+				0DB22462DE302EB08F65846F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MPT Parking";
+			productName = "MPT Parking";
+			productReference = 208E273A25DE3801005266B6 /* MPT Parking.app */;
+			productType = "com.apple.product-type.application";
+		};
+		208E274F25DE3802005266B6 /* MPT ParkingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 208E276725DE3802005266B6 /* Build configuration list for PBXNativeTarget "MPT ParkingTests" */;
+			buildPhases = (
+				8D4B230BC8C7D1BD77D1AA1C /* [CP] Check Pods Manifest.lock */,
+				208E274C25DE3802005266B6 /* Sources */,
+				208E274D25DE3802005266B6 /* Frameworks */,
+				208E274E25DE3802005266B6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				208E275225DE3802005266B6 /* PBXTargetDependency */,
+			);
+			name = "MPT ParkingTests";
+			productName = "MPT ParkingTests";
+			productReference = 208E275025DE3802005266B6 /* MPT ParkingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		208E275A25DE3802005266B6 /* MPT ParkingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 208E276A25DE3802005266B6 /* Build configuration list for PBXNativeTarget "MPT ParkingUITests" */;
+			buildPhases = (
+				B14963237EB37334822F7C9C /* [CP] Check Pods Manifest.lock */,
+				208E275725DE3802005266B6 /* Sources */,
+				208E275825DE3802005266B6 /* Frameworks */,
+				208E275925DE3802005266B6 /* Resources */,
+				DEE84449146E7C3C509092F9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				208E275D25DE3802005266B6 /* PBXTargetDependency */,
+			);
+			name = "MPT ParkingUITests";
+			productName = "MPT ParkingUITests";
+			productReference = 208E275B25DE3802005266B6 /* MPT ParkingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		208E273225DE3801005266B6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					208E273925DE3801005266B6 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					208E274F25DE3802005266B6 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 208E273925DE3801005266B6;
+					};
+					208E275A25DE3802005266B6 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 208E273925DE3801005266B6;
+					};
+				};
+			};
+			buildConfigurationList = 208E273525DE3801005266B6 /* Build configuration list for PBXProject "MPT Parking" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 208E273125DE3801005266B6;
+			productRefGroup = 208E273B25DE3801005266B6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				208E273925DE3801005266B6 /* MPT Parking */,
+				208E274F25DE3802005266B6 /* MPT ParkingTests */,
+				208E275A25DE3802005266B6 /* MPT ParkingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		208E273825DE3801005266B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				208E274A25DE3802005266B6 /* LaunchScreen.storyboard in Resources */,
+				2024F24C25DEF9E7004EA398 /* GoogleService-Info.plist in Resources */,
+				208E274725DE3802005266B6 /* Assets.xcassets in Resources */,
+				208E274525DE3801005266B6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		208E274E25DE3802005266B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		208E275925DE3802005266B6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0DB22462DE302EB08F65846F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MPT Parking/Pods-MPT Parking-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MPT Parking/Pods-MPT Parking-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MPT Parking/Pods-MPT Parking-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		635772CEB8CBF1AA48DE16A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MPT Parking-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D4B230BC8C7D1BD77D1AA1C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MPT ParkingTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B14963237EB37334822F7C9C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MPT Parking-MPT ParkingUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEE84449146E7C3C509092F9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MPT Parking-MPT ParkingUITests/Pods-MPT Parking-MPT ParkingUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MPT Parking-MPT ParkingUITests/Pods-MPT Parking-MPT ParkingUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MPT Parking-MPT ParkingUITests/Pods-MPT Parking-MPT ParkingUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		208E273625DE3801005266B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				208E274225DE3801005266B6 /* ViewController.swift in Sources */,
+				208E273E25DE3801005266B6 /* AppDelegate.swift in Sources */,
+				208E274025DE3801005266B6 /* SceneDelegate.swift in Sources */,
+				2024F23C25DE5A96004EA398 /* LoginViewController.swift in Sources */,
+				20AF956225E3A10600E64755 /* ProfileViewController.swift in Sources */,
+				2024F24125DE5AF2004EA398 /* mainLoginRegistrationViewController.swift in Sources */,
+				208E279225DE4698005266B6 /* RegistrationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		208E274C25DE3802005266B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				208E275525DE3802005266B6 /* MPT_ParkingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		208E275725DE3802005266B6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				208E276025DE3802005266B6 /* MPT_ParkingUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		208E275225DE3802005266B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 208E273925DE3801005266B6 /* MPT Parking */;
+			targetProxy = 208E275125DE3802005266B6 /* PBXContainerItemProxy */;
+		};
+		208E275D25DE3802005266B6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 208E273925DE3801005266B6 /* MPT Parking */;
+			targetProxy = 208E275C25DE3802005266B6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		208E274325DE3801005266B6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				208E274425DE3801005266B6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		208E274825DE3802005266B6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				208E274925DE3802005266B6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		208E276225DE3802005266B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		208E276325DE3802005266B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		208E276525DE3802005266B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B4588BCBC0932606BC7EB48 /* Pods-MPT Parking.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3975FF67Q5;
+				INFOPLIST_FILE = "MPT Parking/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "iBlessme.MPT-Parking";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		208E276625DE3802005266B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC96371A4D68576587413D89 /* Pods-MPT Parking.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3975FF67Q5;
+				INFOPLIST_FILE = "MPT Parking/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "iBlessme.MPT-Parking";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		208E276825DE3802005266B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAAFB7F8ED9E21647018F79B /* Pods-MPT ParkingTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3975FF67Q5;
+				INFOPLIST_FILE = "MPT ParkingTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "iBlessme.MPT-ParkingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MPT Parking.app/MPT Parking";
+			};
+			name = Debug;
+		};
+		208E276925DE3802005266B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D2B55C458B2F35CC5B3F20A /* Pods-MPT ParkingTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3975FF67Q5;
+				INFOPLIST_FILE = "MPT ParkingTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "iBlessme.MPT-ParkingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MPT Parking.app/MPT Parking";
+			};
+			name = Release;
+		};
+		208E276B25DE3802005266B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27C00F52AD4467A4D249D4EA /* Pods-MPT Parking-MPT ParkingUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3975FF67Q5;
+				INFOPLIST_FILE = "MPT ParkingUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "iBlessme.MPT-ParkingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "MPT Parking";
+			};
+			name = Debug;
+		};
+		208E276C25DE3802005266B6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA7797CC51E08075A0C34DD6 /* Pods-MPT Parking-MPT ParkingUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3975FF67Q5;
+				INFOPLIST_FILE = "MPT ParkingUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "iBlessme.MPT-ParkingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "MPT Parking";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		208E273525DE3801005266B6 /* Build configuration list for PBXProject "MPT Parking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				208E276225DE3802005266B6 /* Debug */,
+				208E276325DE3802005266B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		208E276425DE3802005266B6 /* Build configuration list for PBXNativeTarget "MPT Parking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				208E276525DE3802005266B6 /* Debug */,
+				208E276625DE3802005266B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		208E276725DE3802005266B6 /* Build configuration list for PBXNativeTarget "MPT ParkingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				208E276825DE3802005266B6 /* Debug */,
+				208E276925DE3802005266B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		208E276A25DE3802005266B6 /* Build configuration list for PBXNativeTarget "MPT ParkingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				208E276B25DE3802005266B6 /* Debug */,
+				208E276C25DE3802005266B6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 208E273225DE3801005266B6 /* Project object */;
+}
