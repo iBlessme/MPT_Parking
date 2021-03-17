@@ -59,8 +59,8 @@ class RegistrationViewController: UIViewController {
                             "password" : password,
                             "number" : numberPhone,
                             "name" : name,
-                            "surname" : surname,
-                            "carNumber" : "nil"
+                            "surname" : surname
+                           // "carNumber" : "nil"
                         ])
                     self.alertGood()
                         let storyboard = UIStoryboard(name: "Main", bundle: nil)

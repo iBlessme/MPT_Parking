@@ -72,7 +72,7 @@ class ProfileViewController: UIViewController {
             
             let carNumber = user?["carNumber"] as? String
             
-            if carNumber != "nil"{
+            if carNumber != nil{
                 self.carPersonLabel.text = carNumber
                 self.carPersonLabel.isHidden = false
                 self.addCarPersonButton.isHidden = true
@@ -98,5 +98,15 @@ class ProfileViewController: UIViewController {
        
     }
     @IBAction func addCar(_ sender: UIButton) {
+    }
+    
+    
+    @IBAction func deleteCarUser(_ sender: UIButton) {
+        let user = Auth.auth().currentUser
+        Database.database().reference().child("Users").child(user!.uid).child("carNumber").removeValue()
+        self.viewDidLoad()
+        
+        Database.database().reference().child("Cars").child(String(carPersonLabel.text!)).removeValue()
+        self.viewDidLoad()
     }
 }

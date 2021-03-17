@@ -11,6 +11,9 @@
 		2024F23C25DE5A96004EA398 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2024F23B25DE5A96004EA398 /* LoginViewController.swift */; };
 		2024F24125DE5AF2004EA398 /* mainLoginRegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2024F24025DE5AF2004EA398 /* mainLoginRegistrationViewController.swift */; };
 		2024F24C25DEF9E7004EA398 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2024F24B25DEF9E7004EA398 /* GoogleService-Info.plist */; };
+		2034F7E22601E9CD006F3B81 /* ShowDriverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2034F7E12601E9CD006F3B81 /* ShowDriverViewController.swift */; };
+		20451C4B25F8B00F00F0CE36 /* AddCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20451C4A25F8B00F00F0CE36 /* AddCarViewController.swift */; };
+		20451C5325F96AFA00F0CE36 /* FindCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20451C5225F96AF900F0CE36 /* FindCarViewController.swift */; };
 		208E273E25DE3801005266B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208E273D25DE3801005266B6 /* AppDelegate.swift */; };
 		208E274025DE3801005266B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208E273F25DE3801005266B6 /* SceneDelegate.swift */; };
 		208E274225DE3801005266B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208E274125DE3801005266B6 /* ViewController.swift */; };
@@ -48,6 +51,9 @@
 		2024F23B25DE5A96004EA398 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2024F24025DE5AF2004EA398 /* mainLoginRegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainLoginRegistrationViewController.swift; sourceTree = "<group>"; };
 		2024F24B25DEF9E7004EA398 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2034F7E12601E9CD006F3B81 /* ShowDriverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowDriverViewController.swift; sourceTree = "<group>"; };
+		20451C4A25F8B00F00F0CE36 /* AddCarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCarViewController.swift; sourceTree = "<group>"; };
+		20451C5225F96AF900F0CE36 /* FindCarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindCarViewController.swift; sourceTree = "<group>"; };
 		208E273A25DE3801005266B6 /* MPT Parking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MPT Parking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		208E273D25DE3801005266B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		208E273F25DE3801005266B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -133,6 +139,9 @@
 				2024F23B25DE5A96004EA398 /* LoginViewController.swift */,
 				2024F24025DE5AF2004EA398 /* mainLoginRegistrationViewController.swift */,
 				20AF956125E3A10600E64755 /* ProfileViewController.swift */,
+				20451C4A25F8B00F00F0CE36 /* AddCarViewController.swift */,
+				20451C5225F96AF900F0CE36 /* FindCarViewController.swift */,
+				2034F7E12601E9CD006F3B81 /* ShowDriverViewController.swift */,
 				208E274325DE3801005266B6 /* Main.storyboard */,
 				208E274625DE3802005266B6 /* Assets.xcassets */,
 				208E274825DE3802005266B6 /* LaunchScreen.storyboard */,
@@ -425,9 +434,12 @@
 				208E274225DE3801005266B6 /* ViewController.swift in Sources */,
 				208E273E25DE3801005266B6 /* AppDelegate.swift in Sources */,
 				208E274025DE3801005266B6 /* SceneDelegate.swift in Sources */,
+				20451C4B25F8B00F00F0CE36 /* AddCarViewController.swift in Sources */,
 				2024F23C25DE5A96004EA398 /* LoginViewController.swift in Sources */,
 				20AF956225E3A10600E64755 /* ProfileViewController.swift in Sources */,
 				2024F24125DE5AF2004EA398 /* mainLoginRegistrationViewController.swift in Sources */,
+				2034F7E22601E9CD006F3B81 /* ShowDriverViewController.swift in Sources */,
+				20451C5325F96AFA00F0CE36 /* FindCarViewController.swift in Sources */,
 				208E279225DE4698005266B6 /* RegistrationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

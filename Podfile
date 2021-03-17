@@ -11,6 +11,7 @@ target 'MPT Parking' do
 	pod 'Firebase/Auth'
 	pod 'Firebase/Database'
 	pod 'Firebase'
+  pod 'Firebase/Storage'
 
 
   target 'MPT ParkingTests' do

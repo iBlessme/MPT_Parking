@@ -1,0 +1,31 @@
+//
+//  ShowDriverViewController.swift
+//  MPT Parking
+//
+//  Created by Blessme on 17.03.2021.
+//
+
+import UIKit
+
+class ShowDriverViewController: UIViewController {
+    @IBOutlet weak var fioLabel: UILabel!
+    @IBOutlet weak var mailLabel: UILabel!
+    @IBOutlet weak var phNumberLabel: UILabel!
+    @IBOutlet weak var carNumberLabel: UILabel!
+    
+    var fio = ""
+    var mail = ""
+    var numberPh = ""
+    var carNumber = ""
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        fioLabel.text = fio
+        mailLabel.text = mail
+        phNumberLabel.text = numberPh
+        carNumberLabel.text = carNumber
+    }
+    
+    @IBAction func callDriver(_ sender: UIButton) {
+    }
+}
