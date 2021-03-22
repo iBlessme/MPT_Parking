@@ -22,6 +22,11 @@ class LoginViewController: UIViewController {
 
        
     }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if let touch = touches.first as? UITouch{
+            view.endEditing(true)
+        }
+    }
     
     func showNewWindow(){
 

@@ -6,11 +6,14 @@
 //
 
 import UIKit
+import Vision
+import MobileCoreServices
 import Firebase
 import FirebaseAuth
+import FirebaseStorage
 
 
-class ProfileViewController: UIViewController {
+class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     
     @IBOutlet weak var deleteCar: UIButton!
@@ -20,6 +23,8 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var mailPersonLabel: UILabel!
     @IBOutlet weak var numberPhonePersonLabel: UILabel!
     @IBOutlet weak var surnamePersonLabel: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var addImageUser: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -108,5 +113,22 @@ class ProfileViewController: UIViewController {
         
         Database.database().reference().child("Cars").child(String(carPersonLabel.text!)).removeValue()
         self.viewDidLoad()
+    }
+    @IBAction func addImageUser(_ sender: UIButton) {
+        let imagePickerController = UIImagePickerController()
+        imagePickerController.delegate = self
+        imagePickerController.mediaTypes = [kUTTypeImage as String]
+        imagePickerController.sourceType = .photoLibrary
+        imagePickerController.allowsEditing = false
+        present(imagePickerController, animated: true, completion: nil)
+        
+        
+    }
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let capturedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            imageView.contentMode = .scaleAspectFit
+            imageView.image = capturedImage
+        }
+        dismiss(animated: true, completion: nil)
     }
 }

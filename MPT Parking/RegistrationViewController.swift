@@ -23,6 +23,11 @@ class RegistrationViewController: UIViewController {
         super.viewDidLoad()
         
     }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if let touch = touches.first as? UITouch{
+            view.endEditing(true)
+        }
+    }
     
     //Окно ошибки
     func allertError(textString: String){

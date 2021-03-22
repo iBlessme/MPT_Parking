@@ -27,5 +27,8 @@ class ShowDriverViewController: UIViewController {
     }
     
     @IBAction func callDriver(_ sender: UIButton) {
+        if let url = URL(string: "tel://\(numberPh)") {
+             UIApplication.shared.openURL(url)
+         }
     }
 }

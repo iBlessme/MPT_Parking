@@ -42,9 +42,8 @@ class FindCarViewController: UIViewController {
             let car = snapshot.value as? NSDictionary
             let userUid = car?["uid"] as? String
             
-            if !userUid!.isEmpty{
+            if userUid != nil{
             self.readUserInfo(useruid: userUid!)
-           // self.carNumberLabel.text! = Number
             print(userUid!)
             }else{
                 self.allert(textString: "Нет данных по этому номеру")
