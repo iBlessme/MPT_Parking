@@ -12,7 +12,9 @@ class ShowDriverViewController: UIViewController {
     @IBOutlet weak var mailLabel: UILabel!
     @IBOutlet weak var phNumberLabel: UILabel!
     @IBOutlet weak var carNumberLabel: UILabel!
+    @IBOutlet weak var imageViewDrivar: UIImageView!
     
+    var image = UIImage()
     var fio = ""
     var mail = ""
     var numberPh = ""
@@ -20,6 +22,7 @@ class ShowDriverViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        imageViewDrivar.image = image
         fioLabel.text = fio
         mailLabel.text = mail
         phNumberLabel.text = numberPh

@@ -8,6 +8,7 @@
 import UIKit
 import Firebase
 import FirebaseAuth
+import FirebaseStorage
 
 class FindCarViewController: UIViewController {
     @IBOutlet weak var firstChar: UITextField!
@@ -60,10 +61,20 @@ class FindCarViewController: UIViewController {
             let surname = user?["surname"] as? String
             let mail = user?["mail"] as? String
             let numberPh = user?["number"] as? String
-            self.navNewView(fio: "\(name!) \(surname!)", mail: mail!, numberPh: numberPh!)
+     //       self.navNewView(fio: "\(name!) \(surname!)", mail: mail!, numberPh: numberPh!)
             
+            let ref = Storage.storage().reference().child("users").child(useruid)
+            let megaByte = Int64(1 * 1024 * 1024)
+            ref.getData(maxSize: megaByte) {(data, error) in
+                guard let imageData = data else {
+                    return
+                }
+                let image = UIImage(data: imageData)
+                self.navNewView(fio: "\(name!) \(surname!)", mail: mail!, numberPh: numberPh!, image: image!)
+            }
         })
     }
+   
     //вызов окна allert
     func allert(textString: String){
         let alert = UIAlertController(title: "Ошибка", message: textString, preferredStyle: .alert)
@@ -72,7 +83,7 @@ class FindCarViewController: UIViewController {
     }
     
     //переход на другое окно
-    func navNewView(fio: String, mail: String, numberPh: String){
+    func navNewView(fio: String, mail: String, numberPh: String, image: UIImage){
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         guard let vc = storyboard.instantiateViewController(identifier: "ShowDriverViewController") as? ShowDriverViewController else {return}
         
@@ -80,6 +91,7 @@ class FindCarViewController: UIViewController {
         vc.fio = fio
         vc.numberPh = numberPh
         vc.mail = mail
+        vc.image = image
         let carNumber = String(firstChar.text! + firstDigits.text! + secondChars.text! + region.text!)
         vc.carNumber = carNumber
         self.present(vc, animated: true, completion: nil)

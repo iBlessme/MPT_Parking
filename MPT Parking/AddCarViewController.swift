@@ -51,9 +51,16 @@ class AddCarViewController: UIViewController {
             if firstDigitNumber.text?.count == 3{
                 if secondCharsNumber.text?.count == 2{
                     if secondDigitsNumber.text?.count == 2 || secondDigitsNumber.text?.count == 3{
-                        let pattern = "[Е, У, К, Н, А, Р, О, С, М, Т]{2},[0-9]{4}"
-                        
-                        return true
+//                        let patternChars = "ЕУКНАРОСМТВ"
+//                        let patternDigits = "0123456789"
+//                        let pattern =
+//                        var checkPattern: String = "\(firstCharNumber.text!)\(firstDigitNumber.text!)\(secondCharsNumber.text!)\(secondDigitsNumber.text!)"
+//
+//                        if (patternChars.contains(checkPattern) && patternDigits.contains(checkPattern)){
+                            return true
+//                        }else{
+//                            allertError(textString: "Номер содержит недопустимые значения")
+//                        }
                        
                     }else{
                         self.allertError(textString: "Некорректный регион!")

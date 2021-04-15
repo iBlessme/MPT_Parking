@@ -7,11 +7,11 @@ target 'MPT Parking' do
 
   # Pods for MPT Parking
 	pod 'Firebase/Analytics'
-	pod 'Firebase/Firestore'
 	pod 'Firebase/Auth'
 	pod 'Firebase/Database'
 	pod 'Firebase'
  	pod 'Firebase/Storage'
+	pod 'GoogleSignIn'
 
 
   target 'MPT ParkingTests' do

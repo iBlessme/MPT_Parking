@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import Vision
 import MobileCoreServices
 import Firebase
 import FirebaseAuth
@@ -54,6 +53,7 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
                 }
         }
     func loadProfile(){
+        self.loadPhoto()
         let user = Auth.auth().currentUser
         let queryRef = Database.database().reference().child("Users").child(String(user!.uid))
         
@@ -128,7 +128,39 @@ class ProfileViewController: UIViewController, UIImagePickerControllerDelegate, 
         if let capturedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
             imageView.contentMode = .scaleAspectFit
             imageView.image = capturedImage
+            self.uploadPhotoInStorage()
         }
         dismiss(animated: true, completion: nil)
     }
+    func uploadPhotoInStorage(){
+        let user = Auth.auth().currentUser
+        let uid: String = user!.uid
+        let ref = Storage.storage().reference().child("users").child(uid)
+        
+        guard let imageData = imageView.image?.jpegData(compressionQuality: 0.4) else { return }
+        let metadata = StorageMetadata()
+        metadata.contentType = "image/jpeg"
+        
+        _ = ref.putData(imageData, metadata: metadata) {(metadata, error) in
+            guard let metadata = metadata else {return}
+            _ = metadata.size
+            ref.downloadURL {(url, error) in
+                guard let downloadURL = url else {return}
+            }
+        }
+    }
+    func loadPhoto(){
+        let uid: String = Auth.auth().currentUser!.uid
+        let ref = Storage.storage().reference().child("users").child(uid)
+        let megaByte = Int64(1 * 1024 * 1024)
+        ref.getData(maxSize: megaByte) {(data, error) in
+            guard let imageData = data else {
+                return
+            }
+            let image = UIImage(data: imageData)
+            self.imageView.image = image
+        }
+    }
 }
+
+

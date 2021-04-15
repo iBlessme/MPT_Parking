@@ -9,7 +9,6 @@ import UIKit
 import Firebase
 import FirebaseAuth
 
-
 class RegistrationViewController: UIViewController {
     //Аутлеты
     @IBOutlet weak var MailTextField: UITextField!
@@ -21,8 +20,9 @@ class RegistrationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
+    
+    //Функция скрытия клавиатуры
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if let touch = touches.first as? UITouch{
             view.endEditing(true)
@@ -35,9 +35,11 @@ class RegistrationViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         present(alert, animated: true, completion: nil)
     }
+    //Окно успешного прохождения
     func alertGood(){
         let alert = UIAlertController(title: "Успешно", message: "Вы прошли регистрацию", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        present(alert,animated: true,completion: nil)
     }
     //Регистрация
     @IBAction func SigUp(_ sender: UIButton) {
@@ -50,8 +52,7 @@ class RegistrationViewController: UIViewController {
         
         if (!mail.isEmpty && !name.isEmpty && !surname.isEmpty && !numberPhone.isEmpty && !password.isEmpty){
             
-                
-            
+            if(password.count >= 6){
             //Создание пользователя
             Auth.auth().createUser(withEmail: mail, password: password ) {(result, error) in
                 if error == nil {
@@ -65,7 +66,6 @@ class RegistrationViewController: UIViewController {
                             "number" : numberPhone,
                             "name" : name,
                             "surname" : surname
-                           // "carNumber" : "nil"
                         ])
                     self.alertGood()
                         let storyboard = UIStoryboard(name: "Main", bundle: nil)
@@ -77,9 +77,10 @@ class RegistrationViewController: UIViewController {
                 }
             }
         }else{
+                allertError(textString: "Пароль должен содержать минимум 6 символов")
+            }
+    }else{
             allertError(textString: "Не все поля заполнены")
-        }
-        
     }
-    
-    }
+}
+}
